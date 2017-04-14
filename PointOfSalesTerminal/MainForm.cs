@@ -46,9 +46,9 @@ namespace PointOfSalesTerminal
 
         private void closeAllButton_Click(object sender, EventArgs e)
         {
-            manageStockForm.Close();
-            restockForm.Close();
-            terminalForm.Close();
+            if (manageStockForm != null) manageStockForm.Close();
+            if (restockForm != null) restockForm.Close();
+            if (terminalForm != null) terminalForm.Close();
         }
     }
 }

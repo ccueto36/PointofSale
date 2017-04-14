@@ -39,6 +39,7 @@ namespace PointOfSalesTerminal
                 productButton.Parent = this;
                 productButton.Name = products.ElementAt(i).Name + "Button";
                 productButton.Text = products.ElementAt(i).Name;
+                productButton.ForeColor = Color.Red;
                 productButton.Top = topDistance;
                 productButton.Left = leftDistance;
                 if (i % 5 == 0 && i != 0)
@@ -79,7 +80,7 @@ namespace PointOfSalesTerminal
             string output = "";
             foreach(Product record in transaction)
             {
-                finalPrice += record.Price*record.Quantity;
+                finalPrice += record.Price * record.Quantity;
                 output += record.Name + ": x" + record.Quantity + "  @" + record.Price.ToString("C") +  "/each\n";
                 
             }

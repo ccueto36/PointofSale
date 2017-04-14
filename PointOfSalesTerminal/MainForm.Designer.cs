@@ -46,33 +46,42 @@
             this.terminalToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1484, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1484, 29);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // manageStockToolStripMenuItem
             // 
+            this.manageStockToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.manageStockToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageStockToolStripMenuItem.ForeColor = System.Drawing.Color.DodgerBlue;
             this.manageStockToolStripMenuItem.Name = "manageStockToolStripMenuItem";
-            this.manageStockToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.manageStockToolStripMenuItem.Size = new System.Drawing.Size(126, 25);
             this.manageStockToolStripMenuItem.Text = "Manage Stock";
             this.manageStockToolStripMenuItem.Click += new System.EventHandler(this.manageStockToolStripMenuItem_Click);
             // 
             // needRestockToolStripMenuItem
             // 
+            this.needRestockToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.needRestockToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.needRestockToolStripMenuItem.ForeColor = System.Drawing.Color.DodgerBlue;
             this.needRestockToolStripMenuItem.Name = "needRestockToolStripMenuItem";
-            this.needRestockToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.needRestockToolStripMenuItem.Size = new System.Drawing.Size(124, 25);
             this.needRestockToolStripMenuItem.Text = "Need Restock";
             this.needRestockToolStripMenuItem.Click += new System.EventHandler(this.needRestockToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 25);
             // 
             // terminalToolStripMenuItem
             // 
+            this.terminalToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.terminalToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.terminalToolStripMenuItem.ForeColor = System.Drawing.Color.DodgerBlue;
             this.terminalToolStripMenuItem.Name = "terminalToolStripMenuItem";
-            this.terminalToolStripMenuItem.Size = new System.Drawing.Size(143, 20);
+            this.terminalToolStripMenuItem.Size = new System.Drawing.Size(187, 25);
             this.terminalToolStripMenuItem.Text = "Point-of-Sales Terminal";
             this.terminalToolStripMenuItem.Click += new System.EventHandler(this.terminalToolStripMenuItem_Click);
             // 
