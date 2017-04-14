@@ -29,7 +29,7 @@ namespace PointOfSalesTerminal
 
         private bool SellItem(out int qty)
         {
-            int quantity;
+            int quantity = 0;
             if (Int32.TryParse(quantityTextBox.Text, out quantity)) quantity = Int32.Parse(quantityTextBox.Text);
             if (selectedProduct.Quantity < quantity)
             {
@@ -41,6 +41,11 @@ namespace PointOfSalesTerminal
                 
             else
             {
+                if(quantity == 0)
+                {
+                    this.Close();
+                }
+
                 selectedProduct.Quantity -= quantity;
                 qty = quantity;
             }

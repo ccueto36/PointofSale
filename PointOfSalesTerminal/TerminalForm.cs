@@ -16,7 +16,7 @@ namespace PointOfSalesTerminal
         Inventory inventory;
         MainForm parent;
         BindingList<Product> transaction = new BindingList<Product>();
-        double finalPrice = 0;
+        
 
         public TerminalForm(MainForm parent)
         {
@@ -77,14 +77,20 @@ namespace PointOfSalesTerminal
 
         private void FinishButton_Click(object sender, EventArgs e)
         {
+            double finalPrice = 0;
             string output = "";
             foreach(Product record in transaction)
             {
-                finalPrice += record.Price * record.Quantity;
-                output += record.Name + ": x" + record.Quantity + "  @" + record.Price.ToString("C") +  "/each\n";
+                if(record.Quantity > 0)
+                {
+                    finalPrice += record.Price * record.Quantity;
+                    output += record.Name + ": x" + record.Quantity + "  @" + record.Price.ToString("C") + "/ea\n";
+                }
+                
                 
             }
-            output += "----Total Price: " + finalPrice.ToString("C") + "----";
+            output += "------------------------------------------";
+            output += "\nTotal Price: " + finalPrice.ToString("C");
             MessageBox.Show(output, "Receipt");
         
             
