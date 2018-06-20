@@ -39,8 +39,7 @@ namespace PointOfSalesTerminal
             selectedProduct.Description = descriptionTextBox.Text;
             if (selectedProduct.Name != "" && quantity >= 0)
             {
-                MessageBox.Show("Update successful!");
-                this.Close();
+                Close();
             }
             else MessageBox.Show("Please revise input fields");
         }
